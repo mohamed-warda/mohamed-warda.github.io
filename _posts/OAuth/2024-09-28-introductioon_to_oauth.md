@@ -6,14 +6,41 @@ categories: [OAuth]
 tags: [OAuth2.1, Security, Authorization] # TAG names should always be lowercase
 ---
 
-![Image](/assets/img/posts/intro_oauth//oauth-intro-header.jpg)
-
-
-![Image](/assets/img/posts/intro_oauth/code_flow.svg)
+![Image](/assets/img/posts/intro_oauth/what_is_oauth.png)
 
 
 
-# The Problem ..?
+
+
+
+
+
+### First, Let's Discuss the Problem ..!
+
+#### Does this image look familiar? (Facebook)  
+![Image](/assets/img/posts/intro_oauth/facebook.webp)
+
+If you were around during 2008–2010, when Facebook was rapidly growing, you may have seen this before. At that time, Facebook asked users to enter their Gmail address and password so it could access their contact list and suggest friends who were already on the platform. Do you see the problem with this method?
+
+#### A Clearer Example (Yelp)  
+![Image](/assets/img/posts/intro_oauth/yelp.webp)
+
+This is an image of Yelp from around 2008–2011. During sign-up, it would ask you to enter your Gmail address along with your actual password. Yelp used your credentials to log in to your Gmail account on your behalf in order to access your contact list. This allowed Yelp to see which of your friends were already using Yelp and which were not, so you could invite them. Since Yelp was just starting out and had not yet built a strong reputation, many users were hesitant to trust it with sensitive information.
+
+Do you see the problem now? Providing your credentials to another app can be risky. Many people used the same Gmail credentials across various platforms, including banking services, which posed a significant security risk. Sharing login credentials with an unverified site was not only unsafe but also a poor security practice. Although Yelp promised that it would only access your contact list, it still had your password. Moreover, this approach created complications when connecting to third-party apps. For example, if you were connected to both Facebook and Yelp and later decided to remove Yelp, you would have to change your Gmail password—thereby also severing your connection to Facebook.
+
+So here is the big question:  
+**How can I let a website access my data without giving it my password?**
+
+
+### So Now Come the Other Big Question, What is OAuth ..?
+
+
+
+
+
+
+
 
 Starting with a bit of history is helpful to set the stage and understand where these protocols came from and why they were built the way they are. This background will also help us understand how they are intended to be used today.
 
@@ -30,7 +57,6 @@ Starting with a bit of history is helpful to set the stage and understand where 
 	- The delegated authorization problem: **How can I let a website access my data without giving it my password?**
 
 
-dtttttttttttttttttttttttttttt
 ### Example of the Problem (Yelp)
 
 - When users signed up for Yelp, they had the option to invite their friends by sending emails, which required access to their contact list.
@@ -86,7 +112,7 @@ dtttttttttttttttttttttttttttt
 
 **Note:** The authorization server and the resource server can be the same server.
 
-
+![Image](/assets/img/posts/intro_oauth/code_flow.svg)
 
 ## Explaining the Code Flow
 ① First the user interact with his user agent (open his broswer and navigate to the desired site for example `www.client.com` ) this website for example help you archive contacts from you diffrent sources like gmail for example
@@ -131,12 +157,16 @@ _**Note Here**_ : the consent screen step is optional if your authenticating fro
 ⑰ the browser redirect to the client `call back` with the code 
 
 ⑱ the client will use `back channal` to do the exchange operations in the `token` end point sending the code and code_verifier to be validated
+
 ⑲ the the server return an access token to the clinet to if the code and code_verifier are valid
+
 _**Note Here**_ : I know you now have multiple question like why the auth server return a code why not just return the token, and why i need to send the code_verifier
 
 ⑳ the client hold/store the token 
+
 ㉑ then the client redirect to the orignal page that the flow started at `https://client.com`
 so the client will return resposne with redirect to this poge to the browser
+
 ㉒ the browser redirrect and send get request to get the page from the client
 
 
@@ -145,8 +175,13 @@ so the client will return resposne with redirect to this poge to the browser
 _**Note Here**_ : at this point the oauth code flow ended
 
 ㉔ now the user can continior his original operation and click `Get Gmail Contacts` 
+
 ㉕ so the browser will send a get request to the client `https://client.com/gmail/contacts`
+
 ㉖ then the client will use the stored token to call the resource server to fetch the contact list
+
 ㉗ the resource server return respone with the contacts
+
 ㉘ and the client return tha contact to the browerser to be displayed to the user
+
 
