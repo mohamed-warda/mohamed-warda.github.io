@@ -129,15 +129,23 @@ _**Note Here**_ : the consent screen step is optional if your authenticating fro
 
 ⑰ the browser redirect to the client `call back` with the code 
 
-⑱
-⑲
-⑳
-㉑ 
-㉒ 
-㉓ 
-㉔ 
-㉕ 
-㉖ 
-㉗ 
-㉘ 
-㉙
+⑱ the client will use `back channal` to do the exchange operations in the `token` end point sending the code and code_verifier to be validated
+⑲ the the server return an access token to the clinet to if the code and code_verifier are valid
+_**Note Here**_ : I know you now have multiple question like why the auth server return a code why not just return the token, and why i need to send the code_verifier
+
+⑳ the client hold/store the token 
+㉑ then the client redirect to the orignal page that the flow started at `https://client.com`
+so the client will return resposne with redirect to this poge to the browser
+㉒ the browser redirrect and send get request to get the page from the client
+
+
+㉓ the client return the page to the user agent so that the user can continui his original operation `calling the resource server 'Gmail' to get his contact list`
+
+_**Note Here**_ : at this point the oauth code flow ended
+
+㉔ now the user can continior his original operation and click `Get Gmail Contacts` 
+㉕ so the browser will send a get request to the client `https://client.com/gmail/contacts`
+㉖ then the client will use the stored token to call the resource server to fetch the contact list
+㉗ the resource server return respone with the contacts
+㉘ and the client return tha contact to the browerser to be displayed to the user
+
