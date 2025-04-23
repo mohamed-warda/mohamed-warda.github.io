@@ -1,0 +1,5 @@
+//To run Jekyll in production mode locally
+JEKYLL_ENV=production bundle exec jekyll serve
+
+//To run Jekyll normally (in development mode)
+bundle exec jekyll s
