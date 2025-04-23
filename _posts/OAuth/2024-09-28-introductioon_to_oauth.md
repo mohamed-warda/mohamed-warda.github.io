@@ -30,6 +30,7 @@ Starting with a bit of history is helpful to set the stage and understand where 
 	- The delegated authorization problem: **How can I let a website access my data without giving it my password?**
 
 
+dtttttttttttttttttttttttttttt
 ### Example of the Problem (Yelp)
 
 - When users signed up for Yelp, they had the option to invite their friends by sending emails, which required access to their contact list.
