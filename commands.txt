@@ -3,3 +3,6 @@ JEKYLL_ENV=production bundle exec jekyll serve
 
 //To run Jekyll normally (in development mode)
 bundle exec jekyll s
+
+//open in another port
+bundle exec jekyll serve --port 4001
