@@ -68,7 +68,9 @@ From a high level perspective, we can start by not giving third party apps our p
 
 <h3 id='what-is' style="font-weight: bold;">So Again, What is OAuth..?</h3>
 
-OAuth stands for Open Authorization. We mentioned before that the solution is not to share your credentials with a third party app, but rather to give them something else they can use like an access token. So, OAuth is the protocol for obtaining an access token. When we say **protocol**, we mean a series of steps that your app needs to follow. If we were making koshari (an Egyptian dish), we would need to follow the recipe (steps). It’s the same for OAuth it’s the recipe (steps) to obtain an access token. OAuth defines a set of different recipes to obtain an access token, which are called flows.
+OAuth stands for **Open Authorization**. As mentioned earlier, the solution is not to share your credentials with a third party app but rather to provide them with something else they can use, such as an access token. This enables you to grant limited access to your data on another service. For instance, you might want Yelp to access your Gmail contact list to find your friends in the app and invite others.​
+
+So, OAuth is the protocol for obtaining an access token. When we say protocol, we mean a series of steps that your app needs to follow. If we were making koshari (an Egyptian dish), we would need to follow the recipe (steps). It’s the same for OAuth; it’s the recipe (steps) to obtain an access token and OAuth defines a set of different recipes to obtain an access token, known as flows.
 
 
 
