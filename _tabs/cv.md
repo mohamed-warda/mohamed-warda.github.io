@@ -75,7 +75,7 @@ order: 4
 ## Skills
 
 - **Back-end**: C#, ASP.NET Core, .NET Web API, EF Core, LINQ, MVC, SignalR, Identity Framework, OAuth2.1, OpenIddict, Microservices Architecture, Docker, RabbitMQ, Hangfire  
-- **DevOps & Cloud**: Azure DevOps, CI/CD Pipelines, Git, GitHub, Linux, Azure (deployment & integration), Test Containers  
+- **DevOps & Cloud**: Azure DevOps, CI/CD Pipelines, Git, GitHub, Linux, Test Containers  
 - **Databases**: Microsoft SQL Server, PostgreSQL, Elasticsearch  
 - **Front-end**: HTML5, CSS3, Bootstrap, JavaScript, TypeScript, jQuery, Angular  
 - **Tools & Others**: Node.js, Express, SSRS Report Builder, dbForge  
