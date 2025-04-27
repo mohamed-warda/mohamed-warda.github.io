@@ -38,11 +38,11 @@ social:
   email: MohamedWarda.Dev@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://www.linkedin.com/in/mohamedwarda
     - https://twitter.com/IMohamedWarda # change to your Twitter homepage
     - https://github.com/mohamed-warda # change to your GitHub homepage
     # Uncomment below to add more social links
     - https://www.facebook.com/username
-    - https://www.linkedin.com/in/mohamedwarda
 
 # Site Verification Settings
 webmaster_verifications:
