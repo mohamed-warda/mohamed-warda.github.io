@@ -6,3 +6,17 @@ bundle exec jekyll s
 
 //open in another port
 bundle exec jekyll serve --port 4001
+
+
+// page layout options
+layout: post          # or 'page', 'home', etc.
+title: "Your Title"
+date: YYYY-MM-DD
+categories: [OAuth, Security]
+tags: [OAuth2, OpenID]
+image: /assets/images/your-preview.jpg
+author: Mohamed Warda
+excerpt: "A short summary for the post list"
+comments: true        # if Disqus is enabled
+published: true       # or false to hide
+permalink: /custom-url/

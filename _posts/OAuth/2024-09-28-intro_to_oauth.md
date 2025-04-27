@@ -4,6 +4,8 @@ title: OAuth Part 1 - The Problem, Solution, Terminology and Flows Explained
 date: 2025-04-26 8:00:00 +/-0200
 categories: [OAuth]
 tags: [OAuth, Security, Authorization] # TAG names should always be lowercase
+image: /assets/img/posts/oAuth/what_is_oauth.jpg
+
 ---
 
 ![Image](/assets/img/posts/oAuth/what_is_oauth.jpg)
