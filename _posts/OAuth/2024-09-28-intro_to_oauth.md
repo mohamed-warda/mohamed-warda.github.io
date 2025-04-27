@@ -8,10 +8,6 @@ image: /assets/img/posts/oAuth/what_is_oauth.jpg
 
 ---
 
-![Image](/assets/img/posts/oAuth/what_is_oauth.jpg)
-
-
-
 <h3 id='the-problem' style="font-weight: bold;">First, Let's Discuss the Problem ..!</h3>
 
 #### Does this image look familiar? (Facebook)  
