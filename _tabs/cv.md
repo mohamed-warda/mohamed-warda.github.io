@@ -15,7 +15,8 @@ order: 4
  <div style="display: flex; align-items: center;">
    <div style="flex: 2; padding-right: 20px;">
       <strong>Software Engineer</strong>
-      with expertise in .NET technologies, specializing in Full Stack development with ASP.NET Core, Entity Framework, Azure, Angular and Microservices architecture. <br>
+      Specializing in backend development using C#, ASP.NET Core, Web API, and Entity Framework Core, and frontend development with Angular. Skilled in building scalable applications, integrating CI/CD pipelines using Azure DevOps, and optimizing database performance. Currently contributing to mobile app backend development and API design at AliaICT, and previously developed property sales platforms and CRM systems.
+       <br>
       Passionate about building scalable applications and optimizing performance. 
       Experienced in Azure DevOps, CI/CD pipelines, and cloud-based deployment.
    </div>
@@ -42,15 +43,18 @@ order: 4
 ### .NET Full Stack Developer, AliaICT Egypt - Sister Company to AliaICT Saudi  
 *Mar 2024 – Present | Cairo, Egypt*
 
+- **OTA Project**: Working on a new OTA platform using microservices architecture, ensuring smooth service communication.
+- **OAuth2.0/OpenIddict**: Designed and implemented a custom authorization server using OpenIddict for Baab, the company’s new microservices-based product, ensuring secure authentication and authorization.
+- **Payment Gateway Integration**: Integrated multiple payment gateways including Tap Payments and PayTabs into the OTA platform, enabling secure and seamless online transactions.
 - **Nazeel Guest Mobile App**: Fully responsible for backend development, ensuring robust performance and seamless service integration.
 - **Nazeel Revamp**:  
-  - Contributed to the next version of Nazeel using the latest technologies.
+  - Contributed to the next version of Nazeel using the latest technologies.  
   - Collaborated on new feature development and resolved bugs in production and staging environments.
 - **CI/CD Pipelines**: Developed and implemented build and release pipelines using Azure DevOps, streamlining deployment processes.
-- **OAuth2.0/OpenIddict**: Designed and implemented a custom authorization server using OpenIddict for Baab, the company’s new microservices-based product, ensuring secure authentication and authorization.
 - **Database Management**: Maintained database log files to optimize storage and ensure readiness for backups.
 - **Agile Workflow**: Followed an agile workflow with daily standups, sprint planning, and sprint retrospectives.
 - **Cross-Cultural Collaboration**: Worked with colleagues from Saudi Arabia, India, and Egypt, fostering effective teamwork across diverse teams.
+
 
 ### .NET Full Stack Developer, Nocks  
 *Jun 2023 – Mar 2024 | Cairo, Egypt*
